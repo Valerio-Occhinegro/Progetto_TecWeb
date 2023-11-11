@@ -1,0 +1,196 @@
+/*rimuovo i margini prefdefiniti dal browser*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Imposto dei colori e font principali da utilizzare per tutto il sito*/
+:root{
+    --headerBgColor:rgb(69, 60, 60);
+    --headerTxtColor: white;
+    --bgColor: black;
+    --txtColor: white;
+    --footerBgColor:rgb(69, 60, 60);
+    --footerTxtColor: white;
+    --visitedLinkColor:red;
+    --linkColor: white;
+    --flagColor: rgb(116, 227, 11);
+    --font-body-family:"roboto Condensed", sans-serif;
+
+}
+
+html{
+    font-size: 100%; /*rispetto le dimensioni scelte dall'utente*/
+    font-family: var(--font-body-family);
+    line-height: 1.5em;
+    margin: auto;/*per centrare un elemento*/
+    background-color: var(--bgColor);
+    background-image: url("images/bg.png");
+}
+
+body{/*per mettere il footer in fondo alla pagina*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;/*100% del dispositivo*/
+}
+
+
+/********************************
+*HEADER
+********************************/
+
+header{
+    background-color: var(--headerBgColor);
+    color: var(--headerTxtColor);
+    padding: 1em;
+    
+    
+}
+
+/*sostituisco il testo con una immagine*/
+header h1{
+    text-indent:-999em;
+    background-image: url(./images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size:4em;
+    line-height: 1.5em;
+}
+
+/********************************
+*NAV
+********************************/
+nav{
+    background-color: var(--headerBgColor);
+    color: var(--headerTxtColor);
+    float:left;
+    width:25%;
+    margin-left: 10%;
+    overflow:hidden;
+    height:100%;
+    
+}
+
+nav a:link{
+    color:var(--linkColor)
+}
+
+nav a:visited{
+    color: var(--visitedLinkColor);
+}
+
+
+#menu ul{
+    list-style-type: none;/*rimuovo i pallini*/
+}
+
+
+
+
+/********************************
+*MAIN
+********************************/
+
+main{
+    color: var(--txtColor);
+    margin: auto;
+    width: 80%;
+}
+
+main h2{
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+main h3{
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+main a:link{
+    color:var(--linkColor)
+}
+
+main a:visited{
+    color: var(--visitedLinkColor);
+}
+
+
+/********************************
+*FOOTER
+********************************/
+
+footer{
+    background-color: var(--footerBgColor);
+    color: var(--footerTxtColor);
+    text-align: center;
+    padding: 1em;
+    margin-top: auto;
+}
+
+/********************************
+*COMPONENTI
+********************************/
+#componenti{
+    margin:auto;
+    width:95%;
+    max-width: 1024px;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#componenti>dt{
+    background-color: var(--headColor);
+    color: var(--txtColor);
+    border:1px solid black;
+    padding:0.5em;
+    font-size: 1.1em;
+}
+
+#componenti>dd{
+    background-color: var(--bgColor);
+    border: 1px solid black;
+    border-top: none;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+#componenti>dd img{
+    width:15%;
+    float: left;
+    margin-right: 1em;
+}
+
+.componente dt{
+    float: left;
+    font-weight:bold;
+}
+
+/********************************
+*DISCOGRAFIA
+********************************/   
+#album {
+    list-style-type: none;/*rimuovo i pallini*/
+    text-align: center;
+}
+
+#album li{
+    display: inline-block;
+    padding: 2em;
+}
+
+#album li img{
+   width:20em;
+}
+
+
+
+th time span{
+    font-weight: bold;
+}
+
