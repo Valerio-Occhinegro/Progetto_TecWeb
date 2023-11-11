@@ -6,16 +6,18 @@
 
 /*Imposto dei colori e font principali da utilizzare per tutto il sito*/
 :root{
-    --headerBgColor:rgb(69, 60, 60);
+    --headerBgColor:rgb(44, 39, 39);
     --headerTxtColor: white;
-    --bgColor: black;
+    --bgColor: rgb(32, 32, 32);
     --txtColor: white;
-    --footerBgColor:rgb(69, 60, 60);
+    --footerBgColor:rgb(44, 39, 39);
     --footerTxtColor: white;
-    --visitedLinkColor:red;
-    --linkColor: white;
+    --visitedLinkColor: rgb(116, 227, 11);
+    --linkColor: rgb(116, 227, 11);
     --flagColor: rgb(116, 227, 11);
+    --bordersColor: white;
     --font-body-family:"roboto Condensed", sans-serif;
+    --bordersColor: white;
 
 }
 
@@ -28,12 +30,14 @@ html{
     background-image: url("images/bg.png");
 }
 
-body{/*per mettere il footer in fondo alla pagina*/
+/*per mettere il footer in fondo alla pagina, rompe completamente il float*/
+/*
+body{
     display: flex;
     flex-direction: column;
-    min-height: 100vh;/*100% del dispositivo*/
+    min-height: 100vh;
 }
-
+*/ /*100vh vuol dire 100% del dispositivo*/
 
 /********************************
 *HEADER
@@ -42,9 +46,7 @@ body{/*per mettere il footer in fondo alla pagina*/
 header{
     background-color: var(--headerBgColor);
     color: var(--headerTxtColor);
-    padding: 1em;
-    
-    
+    padding-left:10%;
 }
 
 /*sostituisco il testo con una immagine*/
@@ -61,15 +63,26 @@ header h1{
 /********************************
 *NAV
 ********************************/
-nav{
+#breadcrumb{
+    background-color: var(--headerBgColor);
+    color: var(--headerTxtColor);
+    padding-left: 1em;
+    padding-bottom: 1em;
+    border-bottom:2px solid var(--bordersColor);
+}
+
+#breadcrumb p{
+    margin-left:10%;
+}
+
+#menu ul{
     background-color: var(--headerBgColor);
     color: var(--headerTxtColor);
     float:left;
-    width:25%;
+    width:20%;
     margin-left: 10%;
     overflow:hidden;
-    height:100%;
-    
+    list-style-type: none;/*rimuovo i pallini*/
 }
 
 nav a:link{
@@ -80,11 +93,13 @@ nav a:visited{
     color: var(--visitedLinkColor);
 }
 
-
-#menu ul{
-    list-style-type: none;/*rimuovo i pallini*/
+#menu li{
+    padding:2em 1em 2em 2em;
+    text-align: left;
+    border-bottom:2px solid var(--bordersColor);
+    border-left:2px solid var(--bordersColor);
+    border-right:2px solid var(--bordersColor);
 }
-
 
 
 
@@ -94,8 +109,10 @@ nav a:visited{
 
 main{
     color: var(--txtColor);
-    margin: auto;
-    width: 80%;
+    padding: 1.0em;
+    text-align: center;
+    margin-left:30%;
+    width:60%;
 }
 
 main h2{
