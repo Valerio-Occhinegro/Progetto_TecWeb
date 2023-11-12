@@ -17,7 +17,7 @@
     --flagColor: rgb(116, 227, 11);
     --bordersColor: white;
     --font-body-family:"roboto Condensed", sans-serif;
-    --bordersColor: white;
+    --font-header-family:"Andale Mono", monospace;
 
 }
 
@@ -27,7 +27,7 @@ html{
     line-height: 1.5em;
     margin: auto;/*per centrare un elemento*/
     background-color: var(--bgColor);
-    background-image: url("images/bg.png");
+    
 }
 
 /*per mettere il footer in fondo alla pagina, rompe completamente il float*/
@@ -46,18 +46,20 @@ body{
 header{
     background-color: var(--headerBgColor);
     color: var(--headerTxtColor);
-    padding-left:10%;
+    font-family: var(--font-header-family);
+    background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 20%;
 }
 
-/*sostituisco il testo con una immagine*/
+
 header h1{
-    text-indent:-999em;
-    background-image: url(./images/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
+    color:var(--flagColor);
     font-size:4em;
     line-height: 1.5em;
+    margin-left: 40%;
+    text-align: left;
 }
 
 /********************************
