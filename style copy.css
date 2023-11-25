@@ -86,29 +86,68 @@ header h1{
     margin-left:10%;
 }
 
-/******************************
-*MENU DI CAZZO PROVA PORCO
-*******************************/
-
-#menu li{
+/* #menu ul{
+    background-color: var(--headerBgColor);
+    color: var(--headerTxtColor);
+    /* float:left; */
+    /* padding:1em; */
+    /* margin-left: 10%; */
+    overflow:hidden;
+    list-style-type: none;/*rimuovo i pallini*/
+}*/
+/* #menu li{
+    padding:1em 1em 2em 2em;
+    text-align: left;
     display: inline-block;
-    text-align: center;
-    width: 20%;
+    width: 20%; /*equispazio gli elementi della lista */
     background-image: url(/images/enter_key.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 1em;
+    background-position-y: -10px;
+    /* margin:1 0.5em; */
+    /* border-bottom:2px solid var(--bordersColor);
+    border-left:2px solid var(--bordersColor);
+    border-right:2px solid var(--bordersColor); */
+} */
+#menu li a{
+    /* background-image: url(/images/enter_key.png); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat;
+    background-position-y: -10px;
+    display:block; */
+    width:100%;
+    height:100%;
+    background-size: cover;
+    overflow: hidden;
 }
 
-.menu_text{
-    display: block;
-    height: 4em;
+
+#cazzo{
+        background-image: url(/images/enter_key.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: -10px;
+        display:block;
+        width:100%;
+        height:100%;
+        background-size: cover;
+        overflow: hidden;
 }
+
 
 #menu li:hover{
     background-image: url(/images/enter_key_hover.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+}
+
+
+
+
+nav a:link{
+    color:var(--linkColor)
+}
+
+nav a:visited{
+    color: var(--visitedLinkColor);
 }
 
 
