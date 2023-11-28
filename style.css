@@ -177,9 +177,9 @@ footer{
 }
 
 /********************************
-*COMPONENTI
+*PRODOTTI
 ********************************/
-#componenti{
+#Prodotti{
     margin:auto;
     width:95%;
     max-width: 1024px;
@@ -187,7 +187,7 @@ footer{
     padding-bottom: 2em;
 }
 
-#componenti>dt{
+#Prodotti>dt{
     background-color: var(--headColor);
     color: var(--txtColor);
     border:1px solid black;
@@ -195,7 +195,7 @@ footer{
     font-size: 1.1em;
 }
 
-#componenti>dd{
+#Prodotti>dd{
     background-color: var(--bgColor);
     border: 1px solid black;
     border-top: none;
@@ -203,13 +203,13 @@ footer{
     margin-bottom: 1em;
 }
 
-#componenti>dd img{
+#Prodotti>dd img{
     width:15%;
     float: left;
     margin-right: 1em;
 }
 
-.componente dt{
+.prodotto dt{
     float: left;
     font-weight:bold;
 }
