@@ -4,11 +4,17 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: 'MyWebFont';
+    src:  url('/fonts/pixeloidmono-d94ev-webfont.woff') format('woff'),
+          url('/fonts/pixeloidmono-d94ev-webfont.woff2') format('woff2');
+ }
+
 /*Imposto dei colori e font principali da utilizzare per tutto il sito*/
 :root{
-    --headerBgColor:rgb(245, 245, 220);
+    --headerBgColor:rgb(229, 226, 218);
     --headerTxtColor: rgb(101, 67, 33);
-    --bgColor: rgb(221,215,193);
+    --bgColor: rgb(229, 226, 218);
     --txtColor: white;
     --footerBgColor:rgb(101, 67, 33);
     --footerTxtColor: white;
@@ -34,7 +40,6 @@ html{
     line-height: 1.5em;
     margin: auto;/*per centrare un elemento*/
     background-color: var(--bgColor);
-    
 }
 
 /*per mettere il footer in fondo alla pagina, rompe completamente il float*/
@@ -53,12 +58,12 @@ body{
 header{
     background-color: var(--headerBgColor);
     color: var(--headerTxtColor);
-    font-family: var(--font-header-family);
+    /* font-family: var(--font-header-family); */
+    font-family:'MyWebFont';
     background-image: url(./images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 20%;
-
 }
 
 header h1{
@@ -92,26 +97,36 @@ header h1{
 
 #menu li{
     display: inline-block;
-    text-align: center;
+    text-align: left;
+    font-size: 1.2em;
     width: 20%;
-    background-image: url(/images/enter_key.png);
+    background-image: url(/images/menu_key/menu_key.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 1em;
+    padding-top: 1em;
+    padding-left: 1.4em;
+    font-family:'MyWebFont';
+}
+
+
+
+#menu a{
+    text-decoration: none; /* 移除下划线 */
+    color: inherit; /* 继承普通文本的颜色 */
 }
 
 .menu_text{
     display: block;
     height: 4em;
+    /* mix-blend-mode: difference; */
+    
 }
 
 #menu li:hover{
-    background-image: url(/images/enter_key_hover.png);
+    background-image: url(/images/menu_key/menu_key_hover.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-
 
 
 /********************************
