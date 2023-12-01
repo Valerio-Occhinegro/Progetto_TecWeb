@@ -109,8 +109,8 @@ header h1{
     display: inline-block;
     
     width: 20%;
-    min-width: 12em;
-    max-width: 20em;
+    min-width: 11em;
+    max-width: 30em;
    
     background-image: url(./images/menu_key/menu_key.png);
     background-size: contain;
@@ -124,7 +124,7 @@ header h1{
     font-size: 1.2em;
     display: block;
     padding-bottom: 8%;
-    padding-top: 5%;
+    padding-top: 4%;
     padding-left: 8%;
  
 }
