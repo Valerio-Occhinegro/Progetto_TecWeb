@@ -96,43 +96,46 @@ header h1{
 *******************************/
 
 #menu{
-    margin:auto;
+    text-align: center;
+}
+
+#menu ul{/*centro il menu*/
+    max-width: 1200px;
+    margin: auto;
+    list-style-type: none;
 }
 
 #menu li{
     display: inline-block;
-    text-align: left;
     
     width: 20%;
+    min-width: 12em;
+    max-width: 20em;
+   
     background-image: url(./images/menu_key/menu_key.png);
     background-size: contain;
     background-repeat: no-repeat;
+    
     font-family:'MyWebFont';
-    
-    
-    
-}
-
-
-#menu a{
-    text-decoration: none; /* 移除下划线 */
-    color: inherit; /* 继承普通文本的颜色 */
 }
 
 .menu_text{
+    text-align: left;
     font-size: 1.2em;
     display: block;
-    padding-bottom: 2em;
-    padding-top: 1em;
-    padding-left: 1.4em;
-    
-    
-    
-    /* mix-blend-mode: difference; */
-    
+    padding-bottom: 8%;
+    padding-top: 5%;
+    padding-left: 8%;
+ 
 }
 
-#menu li:hover{
+span.menu_text{
+    background-image: url(./images/menu_key/menu_key_hover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+a.menu_text:hover{
     background-image: url(./images/menu_key/menu_key_hover.png);
     background-size: contain;
     background-repeat: no-repeat;
