@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: 'MyWebFont';
-    src:  url('/fonts/pixeloidmono-d94ev-webfont.woff') format('woff'),
-          url('/fonts/pixeloidmono-d94ev-webfont.woff2') format('woff2');
+    src:  url('./fonts/pixeloidmono-d94ev-webfont.woff') format('woff'),
+          url('./fonts/pixeloidmono-d94ev-webfont.woff2') format('woff2');
  }
 
 /*Imposto dei colori e font principali da utilizzare per tutto il sito*/
@@ -102,13 +102,11 @@ header h1{
 #menu li{
     display: inline-block;
     text-align: left;
-    font-size: 1.2em;
+    
     width: 20%;
     background-image: url(./images/menu_key/menu_key.png);
     background-size: contain;
     background-repeat: no-repeat;
-    padding-top: 1em;
-    padding-left: 1.4em;
     font-family:'MyWebFont';
     
     
@@ -116,15 +114,17 @@ header h1{
 }
 
 
-
 #menu a{
     text-decoration: none; /* 移除下划线 */
     color: inherit; /* 继承普通文本的颜色 */
 }
 
-a.menu_text, li.menu_text{
+.menu_text{
+    font-size: 1.2em;
     display: block;
-    height: 4em;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-left: 1.4em;
     
     
     
